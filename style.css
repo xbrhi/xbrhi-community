@@ -1,0 +1,230 @@
+/* التنسيقات العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0f12;
+    color: #e1e6ed;
+    direction: rtl;
+    line-height: 1.6;
+}
+
+/* القائمة العلوية */
+header {
+    background: rgba(15, 18, 24, 0.95);
+    border-bottom: 2px solid #2b3245;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 5%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+nav a {
+    color: #a0aec0;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* الأقسام الأساسية */
+section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #58a6ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p {
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+/* روابط المجتمع */
+.community-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-community {
+    padding: 12px 30px;
+    background: #1f293d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #3b82f6;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-community:hover {
+    background: #3b82f6;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+/* بطاقات الداعمين والألعاب */
+.rewards-grid, .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: right;
+}
+
+.reward-card, .game-card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.reward-card h3, .game-card h3 {
+    color: #58a6ff;
+    margin-bottom: 15px;
+}
+
+.reward-card ul {
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.reward-card li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.reward-card li::before {
+    content: "✔";
+    color: #38ef7d;
+    position: absolute;
+    right: -20px;
+}
+
+.btn-game {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #238636;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* بطاقة الشخصية (إبراهيم الزهراني) */
+.characters-grid.single-character {
+    display: flex;
+    justify-content: center;
+}
+
+.character-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.character-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.character-card p {
+    color: #8b949e;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* نموذج الطلبات */
+.app-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+    background: #161b22;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c9d1d9;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #1f6feb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* تذييل الصفحة */
+footer {
+    background: #090d16;
+    border-top: 1px solid #21262d;
+    padding: 20px;
+    text-align: center;
+    color: #8b949e;
+}
+
+.footer-links a {
+    color: #58a6ff;
+    text-decoration: none;
+    margin: 0 5px;
+}
